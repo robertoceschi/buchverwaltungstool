@@ -1,0 +1,158 @@
+
+    <div id="bedienungsanleitung">
+
+    <h2>1 - Grundsätzliches</h2>
+    <hr/>
+    <h3>Ablauf</h3>
+
+    <p>Um ein neues Buch einzutragen empfielt es sich (wenn nicht schon passiert) zuerst alle anderen Komponenten
+    einzutragen. Mögliche Komponenten:</p>
+    <ul>
+    <li>Autor(en)</li>
+    <li>Bucheinband</li>
+    <li>Genre</li>
+    <li>Edition</li>
+    <li>Themenkreis</li>
+    </ul>
+
+    <h3>Benennung der (Bild-)dateien</h3>
+
+    <p>Um Bild- und Pdf-Dateien übersichtlich zu speichern empfielt sich eine sinnvolle Benennung der Dateien. Wenn eine
+    neue Datei den gleichen Namen hat wie eine schon gespeicherte, wird letztere überschrieben. Leerschläge, Umlaute
+    und Sonderzeichen sind wenn möglich zu vermeiden.</p>
+
+    <p>Unser Vorschlag zur Speicherung der Dateien: </p>
+    <ul>
+    <li>Alles klein schreiben. Wörter mit einem "-" oder "_" trennen.</li>
+    <li><b>Bücher</b> mit dem ganzen Buchtitel benennen. Bsp. deutsche_bevorzugt.jpg</li>
+    <li><b>Autoren</b> mit ganzem Namen Bsp. gabriele_spiller.jpg</li>
+    <li><b>Agenda</b> Veranstaltung und Datum Bsp. vernissage_bernold_dez_11.jpg</li>
+    <li><b>Buchtipps</b> mit dem ganzen Buchtitel benennen. Bsp. kein_wort_mehr_ueber_liebe.jpg</li>
+    </ul>
+
+    <h3>Statuseinstellungen</h3>
+
+    <p>Auf den Übersichtsseiten kann jeweils der Status eines Eintrags verändert werden. Folgende Statuseinstellungen
+    können eingestellt werden:</p>
+    <ul>
+    <li>aktuell: (Nur Bücher: der ausgewählte Eintrag wird auf der Startseite im obersten Feld angezeigt. Ist kein
+    Buch "aktuell wird automatisch das zuletzt erschienene Buch angezeigt. Hinweis: es kann nur ein Buch
+            ausgewählt werden.)
+        </li>
+        <li>normal: (Diese Einstellung ist die Grundeinstellung. Der Eintrag wird normal angezeigt und erscheint auch
+            auf der Startseite, falls er die Kriterien erfüllt.)
+        </li>
+        <li>passiv: (Der Eintrag erscheint nur im Katalog nicht aber auf der Startseite.)</li>
+        <li>versteckt: (Der Eintrag erscheint nicht auf der gesamten Website.)</li>
+    </ul>
+
+    <p>Hinweis: es sind nicht überall alle Statuseinstellungen wählbar</p>
+
+    <h2>2 - Autor eintragen</h2>
+    <hr/>
+    <h3>Textfeld</h3>
+
+    <p>Im Feld "Biografie" kann ein Text eingetragen werden. Mit <b>" B "</b> kann der Text fett, mit <i>" i "</i>
+        kursiv gestellt werden.
+        Probleme kann es geben, wenn ein Text aus einem Textverarbeitungsprogramm direkt hineinkopiert wird. In einem
+        solchen Fall
+        ist der Text bereits vorformatiert und erscheint dementsprechend auf der Website. Besser den Text mittels der
+        Zusatzfunktion " T " als reinen Text ins Feld hineinkopieren oder direkt hineinschreiben.</p>
+
+    <h3>Website und Bild</h3>
+
+    <p>Website und Autorbild sind optional. Wenn letzteres leer bleibt erscheint auf der Website ein Standard- Porträt
+        (grau), was nicht sonderlich schön aussieht.</p>
+
+    <p>Bilder können als jpg, jpeg, giv und png hochgeladen werden. Maximale
+        Grösse <?php /*echo round((AUTOR_MAXDATEIGROESSE / 1024) / 1024, 2) . ' MB'; */?>. Der Upload kann je nach
+        Internetverbindung einen Moment dauern.</p>
+
+    <h2>3 - Bucheinband, Genre, Edition, Themenkreis eintragen</h2>
+    <hr/>
+    <p>Über die Reiter in der Rubrik "Bücher bearbeiten" können obengenannte Begriffe bearbeitet werden.
+        Wird der Wortlaut eines Begriffes geändert ändert sich der Begriff an jeder Stelle.
+        Ändere ich beispielsweise das Genre "Krimi" in "Kriminalroman" ändert sich das Genre bei jedem Buch, das dem
+        Genre "Krimi" zugehört.</p>
+
+    <p>Begriffe aus "Bucheinband", "Genre", "Edition" und "Themenkreis" können erst gelöscht werden, wenn kein Buch
+        betroffen ist. Dies ist eine reine Vorsichtsmassnahme.</p>
+
+    <p>Begriffe können ganz einfach über das Formularfeld hinzugefügt werden.</p>
+
+    <h2>4 - Buch eintragen</h2>
+    <hr/>
+    <p>Das Eintragen eines neuen Buches geschieht in sechs Schritten. Beim erstmaligen eintragen empfielt es sich alle
+        sechs Schritte durchzuführen, da sonst unvollständige Einträge in der Datenbank vorhanden sind.</p>
+
+    <h3>Schritt 1 - Titel, Beschreibung, Bild</h3>
+
+    <p>Im ersten Schritt können Titel, Untertitel, eine Beschreibung und ein Bild hochgeladen werden. Die Beschreibung,
+        wie oben schon erwähnt, kann beim Hineinkopieren aus "Word" o.ä. ungewollte Formatierungen mitspeichern. Am
+        besten den Eintrag zum Schluss sichten. Bei Problemen den Text ganz löschen und neu eingeben.</p>
+
+    <p>Das Bild ist von seiner Grösse her beschränkt. Der Grund ist die lange Ladezeit für der Website. Deswegen lohnt
+        sich ein Verkleinern vorher. Maximal zulässige Grösse ist Maximale
+        Grösse <?php /* echo round((BUCH_MAXDATEIGROESSE / 1024) / 1024, 2) . ' MB'; */?> Allerdings sollten die Bilder auch
+        nicht kleiner als 200px Höhe bzw. 150px Breite gross sein, um eine angemessene Bildqualität zu gewährleisten.
+        Der Upload und das Bildverarbeiten kann unter Umständen etwas länger dauern.</p>
+
+    <p>Wird ein neues Bild hochgeladen, wird das alte automatisch gelöscht. Alternativ kann das Bild auch so gelöscht
+        werden. Es erscheint dann ein graues, leeres Buch auf der Website.</p>
+
+    <h3>Schritt 2 - Autor</h3>
+
+    <p>Es muss mindestens ein Autor aus der Liste ausgewählt werden. Fehlt der Autor, kann er gleich neu eingetragen
+        werden. Siehe "Neuer Autor hinzufügen". Wenn das Buch mehrere Autoren hat, können zusätzliche Felder erstellt
+        werden, im Maximum 5. Siehe "weitere Felder für (Co-)Autoren hinzufügen.</p>
+
+    <h3>Schritt 3 - Genre ...</h3>
+
+    <p>Das Medium ist standardmässig auf Buch gestellt. Es erscheint auf der Website die Anzahl Seiten. Wird Medium
+    Hörbuch gewählt erscheint auf der Website die Anzahl CD(s).</p>
+
+    <p>Neues Genre oder neuer Einband können direkt eingefügt werden. Siehe "Neues Genre", "Neuer Einband". Nach dem
+    Einsetzen kann es vorkommen, dass bereits geänderte Werte bei Schritt 3 wieder auf die alten Werte
+    zurückgestellt werden. Vor dem Speichern also nochmals prüfen.</p>
+
+    <h3>Schritt 4 - Edition ...</h3>
+
+    <p>Standardmässig ist das Buch nicht vergriffen. Wird "vergriffen" angeklickt, erscheint auf der Website in Klammer
+(vergriffen).</p>
+
+    <p>Bei Pressetexten kann wieder das Formatierungsproblem auftauchen. Die Pressetexte erscheinen auf der Website in
+    der rechten Spalte. Zufällig wird ein Buch gewählt dass Pressetexte besitzt. Falls ein Pressetext ganz gelöscht
+    werden muss auch alle Leerzeichen löschen und Textformatierung (<i>i</i> und <b>b</b>) zurück auf Standard
+    zurücksetzen. Wird nicht alles sauber gelöscht kann es vorkommen, dass das Buch trotzdem (auch ohne Pressetext!)
+    unter der Rubrik "Pressestimmen" angezeigt wird.</p>
+
+    <h3>Schritt 5 - Themenkreise</h3>
+
+    <p>Das Buch muss in mindestens einem Themenkreis vertreten sein. Es kann bei Bedarf direkt ein neuer Themenkreis
+    eingeführt werden. Themenkreise empfehlen dem Websitebesucher ähnliche Bücher, die ähnliche Themen behandeln wie
+    das ausgewählte.</p>
+
+    <h3>Schritt 6 - Abschluss</h3>
+
+    <p>Alle eingetragenen Informationen werden noch einmal angezeigt. Bei Bedarf können mit dem Zurück-Knopf Einträge
+    korrigiert werden.</p>
+
+
+    <h2>5 - Agenda eintragen</h2>
+    <hr/>
+    <p> Zeit, Bild und Link ist optional, die anderen Felder müssen ausgefüllt sein. Soll keine Zeit angezeigt werden,
+    muss die Box auf aktiv gestellt werden. Ds Textfeld speichert allenfalls ungeolte Wordformatierungen mit, was zu
+    Problemen führen kann.</p>
+
+    <p>Das Bild kann auch nachträglich hinzugefügt werden. Auf der Website können auch vergangene Termine abgefragt
+    werden. Maximale Bildgrösse <?php /*echo round((AGENDA_MAXDATEIGROESSE / 1024) / 1024, 2) . ' MB';*/ ?></p>
+
+
+<h2>6 - Buchtipp eintragen</h2>
+<hr/>
+<p>Alle Felder sind obligatorisch ausser das Bild. Es erscheint ein Standardbild (grau), wenn kein Bild hochgeladen
+    wird. Das Erscheinungsjahr muss vierstellig eingetragen werden. Maximale
+    Bildgrösse <?php /*echo round((BUCHTIPP_MAXDATEIGROESSE / 1024) / 1024, 2) . ' MB'; */?></p>
+
+
+</div>
