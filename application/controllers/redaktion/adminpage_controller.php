@@ -17,6 +17,7 @@
          * @author      parobri.ch
          * @date        20120710
          */
+        //kleine aenderung
         public function __construct ($sControllerName = 'home', $model = false, $js_file = false) {
             parent::__construct();
 
