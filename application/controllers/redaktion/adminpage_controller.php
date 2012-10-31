@@ -17,6 +17,7 @@
          * @author      parobri.ch
          * @date        20120710
          */
+        //ich bin ein neuer Branch!!!
         public function __construct ($sControllerName = 'home', $model = false, $js_file = false) {
             parent::__construct();
 
