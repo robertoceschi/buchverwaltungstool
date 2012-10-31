@@ -8,3 +8,14 @@
 .DS_Store
 .idea/
 /.c9revisions/*
+
+*/config/development
+*/logs/log-*.php
+*/logs/!index.html
+*/cache/*
+*/cache/!index.html
+/.idea/
+/.idea/*
+/application/config/config.php
+/application/config/database.php
+/.c9revisions/*
